@@ -1,0 +1,131 @@
+<html>
+<head>
+<title>home page::music recommendation</title>
+   <style>
+
+#menu{
+        width:auto;
+        height:100px;
+        border:solid black 2px;)
+     
+        }
+ul li{
+      float:right;
+      padding:20px;
+      list-style:none;
+      }
+ul li a{
+        text-decoration:none;
+         text-color:red;
+}
+    .img{
+     width:48%
+     height:500px;
+    border:solid black 2px ;
+    float:right
+     margin-top:10px;
+}
+
+.reg{
+     width:48%;
+     height:500px;
+     margin-top:100px;
+     }
+#footer
+ {
+    width:auto;
+    height:100px;
+    margin-top:100px;
+ }
+
+</style>
+<script type="text/javascript">
+  function validate()
+{
+var a=document.reg.mno.value;
+var b=document.reg.fname.value;
+if(b.length<8 || b.lenght>15 )
+{
+alert("first name should be min 8 chr or max 15")
+document.reg.fname.focus();
+return false;
+}
+if(isNaN(a))
+{alert("mobile no should be in numbers only")
+document.reg.mno.focus();
+return false;
+}
+if(a.lenght!=10)
+{
+alret (mobile number should be in numbers only")
+doucment.reg.mno.focus();
+return false;
+
+}
+
+   if(a.chaAt(0)<6)
+{
+alert (mobile number should start with 9 or 8 or 7 or 6")
+document.reg.mno.focus();
+return false;
+}
+return true ;
+}
+</script>
+
+</head>
+<body bgcolor="pink">
+    <h1 align ="center"> Emotion based music recommendation</h1>
+<div id="menu">
+
+
+<ul>
+ <li> <a href="homepage.html">homepage</a>  </li>
+<li> <a href="homepage.html">Register</a>  </li>
+<li> <a href="homepage.html">Login</a>  </li>
+<li> <a href="homepage.html">About us</a>  </li>
+<li> <a href="homepage.html">Contact us</a>  </li>
+
+
+      </u1>
+    </div>
+
+
+    <div class="reg">
+       <center><img src="C:\Users\Anju\Downloads\rg.jpg"   width=500px height=500px></center>
+   </div>
+   <div class="reg">
+     <h2 align="center">welcome to Registration</h2>
+     <table align="center" cellspacing=10x cellpadding=10px border="2px">
+       <form name="reg" action="db.html"method="post" onsumbit="return validate()">
+        <tr><td>First Name</td><td><input type="text" required name="fname"></td></tr>
+        <tr><td>Last Name</td><td><input type="text" required name="lname"></td></tr>
+        <tr><td>Email ID</td><td><input type="Email" required name="Emailid"></td><tr>
+        <tr><td>mobile Number</td><td><input type="text" required name="mno"></td><tr>
+        <tr><td>Password</td><td><input type="password" required name="pwd"></td></tr>
+        <tr><td><input type="submit" value="Register"></td><td><input type="reset"></td></tr>
+   </form>
+</table>
+
+
+
+     </div>
+     </div>
+  </div>
+
+
+<div id="footer">
+
+
+<p algign="center">devolped by <a href="https://aurora.in/"aurora university <a/> freshmen</p>
+
+
+</div>
+
+
+  </body>
+</html>
+
+
+
+
